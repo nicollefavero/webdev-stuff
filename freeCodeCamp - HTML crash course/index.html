@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CatPhotoApp</title>
+    </head>
+    <body>
+        <!--This is a comment-->
+        <h1>CatPhotoApp</h1>
+        <main>
+            <h2>Cat Photos</h2>
+            <p><a href="#" target="_blank">Click here</a> to view more cat photos.</p>
+            <a href="#" target="_blank">
+                <img id="Hello Kitty" src="https://veja.abril.com.br/wp-content/uploads/2016/06/hello-kitty-original2.jpeg?quality=70&strip=info&w=620" alt="Shiny cat"/>
+            </a>
+            <h2>Cat Lists</h2>
+            <div class="lists">
+                <p>Things cats <em>love</em>:
+                    <ul>
+                        <li>cat nip</li>
+                        <li>laser pointers</li>
+                        <li>food</li>
+                    </ul>
+                </p>
+                <p>Things cats <strong>hate</strong>:
+                    <ol>
+                        <li>flea treatment</li>
+                        <li>thunders</li>
+                        <li>other cats</li>
+                    </ol>
+            </div>
+            <img src="https://cdn.freecodecamp.org/youtube/html-course/cats.jpg" alt="Cats"><br>
+            <form action="/submit-cat-photo">
+                <h3>Where do you keep your cat?</h3>
+                <!--Label tag allows select radio by its label, not only by clicking the circle-->
+                <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor</label><br>
+                <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
+                <h3>Personality Traits</h3>
+                <label for="loving"><input id="loving" type=checkbox name="personality"> Loving</label><br>
+                <label for="lazy"><input id="lazy" type=checkbox name="personality"> Lazy</label><br>
+                <label for="angry"><input id="angry" type=checkbox name="personality"> Angry</label><br><br>
+                <input type="text" placeholder="cat photo URL" required>
+                <button type="submit">Submit</button>
+            </form>
+            </p>
+        </main>
+        <footer>
+            <p><small> Copyright - <a href="https://freeCodeCamp.org">freeCodeCamp.org</a><br>by Nicolle</small></p>
+        </footer>
+    </body>
+</html>
