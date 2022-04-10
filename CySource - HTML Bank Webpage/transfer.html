@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LTMH - Transferência</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div>
+			<h1>Transferir Dinheiro</h1>
+		</div>
+		<div>
+			<hr>
+			<!-- Parte da transferência de dinheiro -->
+			<form action="transfer-succeeded.html" method="post">
+				<label for="receiver">Insira a chave PIX</label>
+				<input type="text" id="receiver" name="receiver" required></input>
+				<br><br>
+				
+				<label for="amount">Valor a transferir</label>
+				<input type="text" id="amount" name="amount" required></input>
+				<br><br>
+				
+				<input type="submit" value="Transferir"></input>
+			</form>
+			<hr>
+			<br>
+			<a href="principal.html"><button>Voltar</button></a>
+		</div>
+	</body>
+</html>
