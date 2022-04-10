@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>LMTH - Transferência</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	</head>
+	  <!--Main Navigation-->
+  <header>
+    <style>
+      #intro {
+        background-image: url(floriane-vita-FyD3OWBuXnY-unsplash.jpg);
+        background-size: cover;
+		height: 100vh;
+		width: 100%;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #intro {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" href="principal.html">
+          <strong>Banco LMTH</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  
+			<!-- Transferir dinheiro -->
+            <li class="nav-item active">
+              <a class="nav-link" href="transfer.html">Transferir Dinheiro</a>
+            </li>
+			
+			<!-- Pagar fatura -->
+            <li class="nav-item">
+              <a class="nav-link" href="principal.html" rel="nofollow">Pagar Fatura</a>
+            </li>
+			
+			<!-- Atualizar Perfil -->
+            <li class="nav-item">
+              <a class="nav-link" href="update-data.html">Atualizar Perfil</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+  </header>
+  
+  <body>
+	<!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+      <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-5 col-md-8">
+				<form class="bg-white  rounded-5 shadow-5-strong p-5" action="transfer-succeeded.html" method="post">
+					<h1 class="bank-name"><strong>Transferência</strong></h1>
+					<br>
+					<div class="form-outline mb-4">
+						<label for="receiver">Insira a chave PIX</label>
+						<input type="text" id="receiver" name="receiver" class="form-control" required></input>
+					</div>
+					
+					<div class="form-outline mb-4">
+						<label for="amount">Valor a transferir</label>
+						<input type="text" id="amount" name="amount" class="form-control" required></input>
+					</div>
+					<br>
+					<button type="submit" class="btn btn-success">Transferir</button>
+					<a href="principal.html"><button type="button" class="btn btn-primary">Voltar</button></a>
+				</form>
+				</div>
+			</div>
+        </div>
+      </div>
+	</div>
+	</body>
+</html>
